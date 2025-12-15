@@ -1,0 +1,16 @@
+MetaFileClass {
+ Name "{EC00F026DFB02C19}WorkbenchV3/UI/Icons/survival.png"
+ Author "desktop-al24u1t"
+ ChangeDate -2037779579
+ Configurations {
+  PNGResourceClass PC {
+   SourceFile "survival.png"
+  }
+  PNGResourceClass XBOX_ONE : PC {
+  }
+  PNGResourceClass PS4 : PC {
+  }
+  PNGResourceClass LINUX : PC {
+  }
+ }
+}

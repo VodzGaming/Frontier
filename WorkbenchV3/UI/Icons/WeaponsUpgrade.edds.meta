@@ -1,0 +1,16 @@
+MetaFileClass {
+ Name "{48A80935006F0D95}WorkbenchV3/UI/Icons/WeaponsUpgrade.png"
+ Author "desktop-al24u1t"
+ ChangeDate -192810107
+ Configurations {
+  PNGResourceClass PC {
+   SourceFile "WeaponsUpgrade.png"
+  }
+  PNGResourceClass XBOX_ONE : PC {
+  }
+  PNGResourceClass PS4 : PC {
+  }
+  PNGResourceClass LINUX : PC {
+  }
+ }
+}

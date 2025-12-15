@@ -1,0 +1,31 @@
+=== Frontier Workbench Power Guide ===
+
+Server time runs faster than real life (12x day / 15x night ~ 13.5x average). The power numbers inside the `"power"` section of `WorkbenchConfig.json` are **per in-game hour**, so a value of 45 drains a 72k battery in roughly five real days.
+
+Runtime math:
+    RealHours ~ (BatteryQuantity / ConsumptionPerHour) / 13.5
+
+Examples (72k battery):
+  - 30  -> ~7 real days
+  - 40  -> ~5.5 real days
+  - 45  -> ~5 real days
+  - 65  -> ~3.8 real days
+  - 80  -> ~3.1 real days
+  - 110 -> ~2.2 real days
+  - 140 -> ~1.7 real days
+  - 160 -> ~1.5 real days
+
+Editing tips:
+  1. Lower values = slower drain (longer runtime).
+  2. Higher values = faster drain (shorter runtime).
+  3. Use the exact `CfgVehicles` class names (case does not matter, but underscores/spelling must match).
+  4. Restart the server after edits so the config reloads.
+
+Suggested ranges (matching the defaults):
+  - Small crates / drybags: 30-40
+  - Barrels / sea chests:  40-50
+  - Medium tents:          60-80
+  - Large tents / car tents: 140-170
+  - Workbench add-ons:     70-120
+
+You can tailor the numbers to your economy; just plug the desired real-time runtime into the equation above to calculate a new value.

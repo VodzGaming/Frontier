@@ -1,0 +1,63 @@
+Frontier Workbench Crafting JSON Guide
+======================================
+
+Where recipes live
+------------------
+- Recipes are read from: $profile:/Frontier/<Category>/<Category>Recipes.json
+- Example layout:
+  - Frontier/WorkbenchConfig.json               (power/admin/queue)
+  - Frontier/Storage/StorageRecipes.json
+  - Frontier/Defense/DefenseRecipes.json
+  - Frontier/Medical/MedicalRecipes.json
+  - Frontier/Survival/SurvivalRecipes.json
+
+Naming rules
+------------
+- Folder name = Category name (case-sensitive).
+- File name inside = <Category>Recipes.json (e.g., StorageRecipes.json).
+
+JSON structure (per file)
+-------------------------
+{
+  "Category": "Storage",
+  "IconKey": "",
+  "Recipes": [
+    {
+      "Id": "fb_seachest",
+      "Name": "Sea Chest",
+      "Result": "seachest",
+      "ResultCount": 1,
+      "RequireBench": 1,
+      "RequireTerritory": 0,
+      "BenchRadius": 3.0,
+      "Category": "Storage",
+      "IconKey": "housepic",
+      "RequiredAttachments": ["HandSaw"],
+      "Ingredients": [
+        { "Type": "WoodenPlank", "Count": 4 },
+        { "Type": "Nail", "Count": 10 }
+      ],
+      "Results": [
+        { "Type": "seachest", "Count": 1 }
+      ],
+      "CraftTime": 12.0
+    }
+  ]
+}
+
+How loading works
+-----------------
+1) On server start, the mod scans $profile:/Frontier/*/<Category>Recipes.json.
+2) It builds a DB and sends it to clients via RPC (BuildClientData).
+3) The HUD renders whatever the client receives.
+
+Common pitfalls
+---------------
+- Multiple Frontier folders: the one under the active -profiles path wins.
+- Old client PBO: clients with an old WorkbenchV3 pbo will show the sample recipes (WoodenCrate, BoneArrow, Clean Bandage).
+- To verify client uses the new pbo, look for [Frontier][ClientState] UpdateData/Recipe received lines in the client script log.
+
+Verification
+------------
+- Server log: [Frontier][CraftServerManager] Recipe sent id=... and BuildClientData categories=...
+- Client log: [Frontier][ClientState] UpdateData ... and Recipe received id=...

@@ -1,0 +1,16 @@
+MetaFileClass {
+ Name "{649B6DD531E1374B}WorkbenchV3/UI/Icons/Clothing.png"
+ Author "desktop-al24u1t"
+ ChangeDate -427691131
+ Configurations {
+  PNGResourceClass PC {
+   SourceFile "Clothing.png"
+  }
+  PNGResourceClass XBOX_ONE : PC {
+  }
+  PNGResourceClass PS4 : PC {
+  }
+  PNGResourceClass LINUX : PC {
+  }
+ }
+}

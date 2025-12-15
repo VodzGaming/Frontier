@@ -1,0 +1,49 @@
+SmartPanelWidgetClass rootFrame {
+ size 0.36 0.5
+ halign left_ref
+ valign top_ref
+ userID 25
+ {
+  ItemPreviewWidgetClass CraftItemPreview {
+   ignorepointer 1
+   position 0 0
+   size 1 0.44
+   halign center_ref
+   valign top_ref
+  }
+    PanelWidgetClass CraftItemPanel {
+     visible 0
+     ignorepointer 1
+     position 0 0.44
+     size 1 0.56
+     color 0 0 0 0.65
+   priority 5
+   style blank
+   {
+    MultilineTextWidgetClass CraftItemName {
+     ignorepointer 1
+     position 0.03 0.02
+     size 0.94 0.96
+      color 0.93 0.89 0.83 1
+     text "Item"
+     font "WorkbenchV3/UI/font/Orbitron28"
+     "exact text" 1
+     "text halign" left
+     "text valign" center
+     wrap 1
+    }
+   }
+  }
+  TextWidgetClass Craftitemnedeed {
+   ignorepointer 1
+   color 0.96 0.99 0.96 1
+   position 0 0.9
+   size 1 0.1
+   text "x0"
+    font "WorkbenchV3/UI/font/Orbitron32"
+   "text halign" center
+   "text valign" center
+    "exact text" 1
+  }
+ }
+}

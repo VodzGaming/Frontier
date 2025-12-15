@@ -1,0 +1,48 @@
+SmartPanelWidgetClass rootFrame {
+ size 0.36 0.48
+ halign left_ref
+ valign top_ref
+ userID 25
+ {
+      ItemPreviewWidgetClass CraftItemPreview {
+         ignorepointer 1
+         position 0 0
+         size 1 0.45
+   halign center_ref
+   valign top_ref
+  }
+   PanelWidgetClass CraftItemPanel {
+    ignorepointer 1
+       position 0 0.45
+       size 1 0.53
+   color 0 0 0 0.65
+   priority 5
+   style blank
+   {
+      MultilineTextWidgetClass CraftItemName {
+       ignorepointer 1
+      position 0.03 0.05
+      size 0.65 0.92
+         color 0.93 0.89 0.83 1
+         text "Item"
+         font "WorkbenchV3/UI/font/Orbitron28"
+     "exact text" 1
+     "text halign" left
+     "text valign" center
+     wrap 1
+    }
+      TextWidgetClass ResultCountLabel {
+       ignorepointer 1
+       color 0.96 0.99 0.96 1
+      position 0.7 0.05
+      size 0.28 0.92
+       text "x1"
+       font "WorkbenchV3/UI/font/Orbitron32"
+       "text halign" right
+       "text valign" center
+       "exact text" 1
+      }
+     }
+    }
+ }
+}

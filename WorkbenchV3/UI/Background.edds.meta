@@ -1,0 +1,16 @@
+MetaFileClass {
+ Name "{11155692C42524E7}WorkbenchV3/UI/Background.edds"
+ Author "desktop-al24u1t"
+ ChangeDate -1157352587
+ Configurations {
+  PNGResourceClass PC {
+   SourceFile "Background.png"
+  }
+  PNGResourceClass XBOX_ONE : PC {
+  }
+  PNGResourceClass PS4 : PC {
+  }
+  PNGResourceClass LINUX : PC {
+  }
+ }
+}

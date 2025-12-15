@@ -1,0 +1,16 @@
+MetaFileClass {
+ Name "{33D950937D534C3F}LionWorkbench/datasets/font/Orbitron22.edds"
+ Author "dmitri"
+ ChangeDate -2032995567
+ Configurations {
+  TGAResourceClass PC {
+   SourceFile "Orbitron22.tga"
+  }
+  TGAResourceClass XBOX_ONE : PC {
+  }
+  TGAResourceClass PS4 : PC {
+  }
+  TGAResourceClass LINUX : PC {
+  }
+ }
+}

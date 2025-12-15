@@ -1,0 +1,151 @@
+---------------------------------------------
+Log C:\Users\Shock\AppData\Local\DayZ\error.log started at 04.12. 04:16:27
+
+GUI       (E): Widget style 'new_bg' for class 'SmartPanelWidget' has Item 'Bottom' referencing unknown Image 'bottom1'
+GUI       (E): Widget style 'new_bg' for class 'SmartPanelWidget' has Item 'Center' referencing unknown Image 'center'
+GUI       (E): Widget style 'new_bg' for class 'SmartPanelWidget' has Item 'Left' referencing unknown Image 'left1'
+GUI       (E): Widget style 'new_bg' for class 'SmartPanelWidget' has Item 'LeftBottom' referencing unknown Image 'bottomLeft'
+GUI       (E): Widget style 'new_bg' for class 'SmartPanelWidget' has Item 'LeftTop' referencing unknown Image 'topLeft'
+GUI       (E): Widget style 'new_bg' for class 'SmartPanelWidget' has Item 'Overlay' referencing unknown Image 'fill'
+GUI       (E): Widget style 'new_bg' for class 'SmartPanelWidget' has Item 'Right' referencing unknown Image 'right1'
+GUI       (E): Widget style 'new_bg' for class 'SmartPanelWidget' has Item 'RightBottom' referencing unknown Image 'bottomRight'
+GUI       (E): Widget style 'new_bg' for class 'SmartPanelWidget' has Item 'RightTop' referencing unknown Image 'topRight'
+GUI       (E): Widget style 'new_bg' for class 'SmartPanelWidget' has Item 'Top' referencing unknown Image 'top1'
+GUI       (E): LoadImageSet 'WorkbenchV3/datasets/gui/lion_ui_components.imageset' file not exist
+GUI       (E): LoadStyles Can't load widget styles WorkbenchV3/datasets/gui/LionCraftStyles.styles
+ANIMATION (E): Can't load E:\SteamLibrary\steamapps\common\DayZ\!Workshop\@Dabs Framework/Anims/cfg/skeletons.anim.xml
+ANIMATION (E): Failed to open file, line 0, column 0
+ANIMATION (E): Can't load E:\SteamLibrary\steamapps\common\DayZ\!Workshop\@VPPAdminTools/Anims/cfg/skeletons.anim.xml
+ANIMATION (E): Failed to open file, line 0, column 0
+ANIMATION (E): Can't load E:\SteamLibrary\steamapps\common\DayZ\!Workshop\@CF/Anims/cfg/skeletons.anim.xml
+ANIMATION (E): Failed to open file, line 0, column 0
+ANIMATION (E): Can't load G:\SteamLibrary\steamapps\common\DayZServer\@TestingMods/Anims/cfg/skeletons.anim.xml
+ANIMATION (E): Failed to open file, line 0, column 0
+ANIMATION (E): Can't load sakhal/Anims/cfg/skeletons.anim.xml
+ANIMATION (E): Failed to open file, line 0, column 0
+SCRIPT    (W): @"WorkbenchV3/Scripts/4_World/classes\actions\interact\actionfbworkbenchclaim.c,1": Forward declarations are deprecated!
+SCRIPT    (W): @"WorkbenchV3/Scripts/4_World/classes\actions\interact\actionfbworkbenchrefresh.c,1": Forward declarations are deprecated!
+SCRIPT    (W): @"WorkbenchV3/Scripts/4_World/classes\craftmanager\craftmanager.c,1": Forward declarations are deprecated!
+SCRIPT    (W): @"WorkbenchV3/Scripts/4_World/classes\craftmanager\craftmanager.c,2": Forward declarations are deprecated!
+SCRIPT    (W): @"WorkbenchV3/Scripts/4_World/entities\itembase\fb_workbench_kit.c,1": Forward declarations are deprecated!
+SCRIPT    (W): @"WorkbenchV3/Scripts/4_World/classes\craftmanager\craftservermanager.c,1": Forward declarations are deprecated!
+SCRIPT    (W): @"WorkbenchV3/Scripts/4_World/classes\actions\continuous\actionbddismantlecontainer.c,1": Forward declarations are deprecated!
+SCRIPT    (W): @"WorkbenchV3/Scripts/4_World/classes\actions\interact\actionfbworkbenchopen.c,1": Forward declarations are deprecated!
+SCRIPT    (W): @"WorkbenchV3/Scripts/4_World/classes\actions\interact\actionfbworkbenchclearaccess.c,1": Forward declarations are deprecated!
+SCRIPT    (W): @"WorkbenchV3/Scripts/4_World/wbl_common.c,203": FIX-ME: Method argument can't be strong reference
+SCRIPT    (W): @"WorkbenchV3/Scripts/4_World/wbl_common.c,273": FIX-ME: Method argument can't be strong reference
+RENDER    (E): Cannot find PP effect CloudsEffect, is the name correct?
+RESOURCES (E): Failed to open object @".ptc"
+RESOURCES (E): Bad texture name 'alpha'
+MATERIAL  (E): Can't load 'AlbedoMap' 'alpha', in material @"Graphics/Particles/materials/glow/glow1.emat"
+PARTICLES (E): ParticleEffect graphics/particles/smoking_barrel.ptc cannot find material Graphics/Particles/materials/smoke/gunsmoke_muzzle_1.emat
+SCRIPT    (W): @"WorkbenchV3/Scripts/5_Mission/mission/missionserver.c,3": FIX-ME: Overriding function 'InvokeOnConnect' but not marked as 'override'
+MATERIAL  (E): Object dz/characters/bodies/player_testing.xob - cannot load material cross_red.emat
+GUI       (E): ImageWidget::LoadImageFile can't set image 'set:dayz_inventory image:batterycharger'
+GUI       (E): ImageWidget::LoadImageFile can't load 'set:dayz_inventory image:batterycharger'
+GUI       (E): ImageWidget::LoadImageFile can't set image 'set:dayz_inventory image:batterycharger'
+GUI       (E): ImageWidget::LoadImageFile can't load 'set:dayz_inventory image:batterycharger'
+GUI       (E): ImageWidget::LoadImageFile can't set image 'set:dayz_inventory image:batterycharger'
+GUI       (E): ImageWidget::LoadImageFile can't load 'set:dayz_inventory image:batterycharger'
+GUI       (E): ImageWidget::LoadImageFile can't set image 'set:dayz_inventory image:powersupply'
+GUI       (E): ImageWidget::LoadImageFile can't load 'set:dayz_inventory image:powersupply'
+GUI       (E): ImageWidget::LoadImageFile can't set image 'set:dayz_inventory image:plug'
+GUI       (E): ImageWidget::LoadImageFile can't load 'set:dayz_inventory image:plug'
+MATERIAL  (E): Object dz/characters/zombies/z_hermit_m.xob - cannot load material Material_1.emat
+GUI       (W): Font 'WorkbenchV3/UI/font/Orbitron20' not found
+GUI       (W): Font 'WorkbenchV3/UI/font/Orbitron18' not found
+GUI       (W): Font 'WorkbenchV3/UI/font/Orbitron24' not found
+GUI       (W): Font 'WorkbenchV3/UI/font/Orbitron32' not found
+GUI       (W): Font 'WorkbenchV3/UI/font/Orbitron34' not found
+GUI       (W): Font 'WorkbenchV3/UI/font/Orbitron26' not found
+GUI       (E): ImageWidget::LoadImageFile can't load 'Menu.edds'
+GUI       (E): ImageWidget::LoadImageFile can't load 'Menu.edds'
+GUI       (E): ImageWidget::LoadImageFile can't load 'menu.edds'
+GUI       (E): ImageWidget::LoadImageFile can't load 'Ammo.edds'
+GUI       (E): ImageWidget::LoadImageFile can't load 'Ammo.edds'
+GUI       (E): ImageWidget::LoadImageFile can't load 'ammo.edds'
+GUI       (E): ImageWidget::LoadImageFile can't load 'Weapons.edds'
+GUI       (E): ImageWidget::LoadImageFile can't load 'Weapons.edds'
+GUI       (E): ImageWidget::LoadImageFile can't load 'weapons.edds'
+GUI       (E): ImageWidget::LoadImageFile can't load 'Clothing.edds'
+GUI       (E): ImageWidget::LoadImageFile can't load 'Clothing.edds'
+GUI       (E): ImageWidget::LoadImageFile can't load 'clothing.edds'
+GUI       (E): ImageWidget::LoadImageFile can't load 'Medical.edds'
+GUI       (E): ImageWidget::LoadImageFile can't load 'Medical.edds'
+GUI       (E): ImageWidget::LoadImageFile can't load 'medical.edds'
+GUI       (E): ImageWidget::LoadImageFile can't load 'Storage.edds'
+GUI       (E): ImageWidget::LoadImageFile can't load 'Storage.edds'
+GUI       (E): ImageWidget::LoadImageFile can't load 'storage.edds'
+GUI       (E): ImageWidget::LoadImageFile can't load 'Survival.edds'
+GUI       (E): ImageWidget::LoadImageFile can't load 'Survival.edds'
+GUI       (E): ImageWidget::LoadImageFile can't load 'survival.edds'
+GUI       (E): ImageWidget::LoadImageFile can't load 'Weapons.edds'
+GUI       (E): ImageWidget::LoadImageFile can't load 'Weapons.edds'
+GUI       (E): ImageWidget::LoadImageFile can't load 'weapons.edds'
+GUI       (E): ImageWidget::LoadImageFile can't load 'WeaponsUpgrade.edds'
+GUI       (E): ImageWidget::LoadImageFile can't load 'WeaponsUpgrade.edds'
+GUI       (E): ImageWidget::LoadImageFile can't load 'weaponsupgrade.edds'
+GUI       (E): ImageWidget::LoadImageFile can't load 'Menu.edds'
+GUI       (E): ImageWidget::LoadImageFile can't load 'Menu.edds'
+GUI       (E): ImageWidget::LoadImageFile can't load 'menu.edds'
+GUI       (E): ImageWidget::LoadImageFile can't load 'Ammo.edds'
+GUI       (E): ImageWidget::LoadImageFile can't load 'Ammo.edds'
+GUI       (E): ImageWidget::LoadImageFile can't load 'ammo.edds'
+GUI       (E): ImageWidget::LoadImageFile can't load 'Weapons.edds'
+GUI       (E): ImageWidget::LoadImageFile can't load 'Weapons.edds'
+GUI       (E): ImageWidget::LoadImageFile can't load 'weapons.edds'
+GUI       (E): ImageWidget::LoadImageFile can't load 'Clothing.edds'
+GUI       (E): ImageWidget::LoadImageFile can't load 'Clothing.edds'
+GUI       (E): ImageWidget::LoadImageFile can't load 'clothing.edds'
+GUI       (E): ImageWidget::LoadImageFile can't load 'Medical.edds'
+GUI       (E): ImageWidget::LoadImageFile can't load 'Medical.edds'
+GUI       (E): ImageWidget::LoadImageFile can't load 'medical.edds'
+GUI       (E): ImageWidget::LoadImageFile can't load 'Storage.edds'
+GUI       (E): ImageWidget::LoadImageFile can't load 'Storage.edds'
+GUI       (E): ImageWidget::LoadImageFile can't load 'storage.edds'
+GUI       (E): ImageWidget::LoadImageFile can't load 'Survival.edds'
+GUI       (E): ImageWidget::LoadImageFile can't load 'Survival.edds'
+GUI       (E): ImageWidget::LoadImageFile can't load 'survival.edds'
+GUI       (E): ImageWidget::LoadImageFile can't load 'Weapons.edds'
+GUI       (E): ImageWidget::LoadImageFile can't load 'Weapons.edds'
+GUI       (E): ImageWidget::LoadImageFile can't load 'weapons.edds'
+GUI       (E): ImageWidget::LoadImageFile can't load 'WeaponsUpgrade.edds'
+GUI       (E): ImageWidget::LoadImageFile can't load 'WeaponsUpgrade.edds'
+GUI       (E): ImageWidget::LoadImageFile can't load 'weaponsupgrade.edds'
+GUI       (E): ImageWidget::LoadImageFile can't load 'Menu.edds'
+GUI       (E): ImageWidget::LoadImageFile can't load 'Menu.edds'
+GUI       (E): ImageWidget::LoadImageFile can't load 'menu.edds'
+GUI       (E): ImageWidget::LoadImageFile can't load 'Ammo.edds'
+GUI       (E): ImageWidget::LoadImageFile can't load 'Ammo.edds'
+GUI       (E): ImageWidget::LoadImageFile can't load 'ammo.edds'
+GUI       (E): ImageWidget::LoadImageFile can't load 'Weapons.edds'
+GUI       (E): ImageWidget::LoadImageFile can't load 'Weapons.edds'
+GUI       (E): ImageWidget::LoadImageFile can't load 'weapons.edds'
+GUI       (E): ImageWidget::LoadImageFile can't load 'Clothing.edds'
+GUI       (E): ImageWidget::LoadImageFile can't load 'Clothing.edds'
+GUI       (E): ImageWidget::LoadImageFile can't load 'clothing.edds'
+GUI       (E): ImageWidget::LoadImageFile can't load 'Medical.edds'
+GUI       (E): ImageWidget::LoadImageFile can't load 'Medical.edds'
+GUI       (E): ImageWidget::LoadImageFile can't load 'medical.edds'
+GUI       (E): ImageWidget::LoadImageFile can't load 'Storage.edds'
+GUI       (E): ImageWidget::LoadImageFile can't load 'Storage.edds'
+GUI       (E): ImageWidget::LoadImageFile can't load 'storage.edds'
+GUI       (E): ImageWidget::LoadImageFile can't load 'Survival.edds'
+GUI       (E): ImageWidget::LoadImageFile can't load 'Survival.edds'
+GUI       (E): ImageWidget::LoadImageFile can't load 'survival.edds'
+GUI       (E): ImageWidget::LoadImageFile can't load 'Weapons.edds'
+GUI       (E): ImageWidget::LoadImageFile can't load 'Weapons.edds'
+GUI       (E): ImageWidget::LoadImageFile can't load 'weapons.edds'
+GUI       (E): ImageWidget::LoadImageFile can't load 'WeaponsUpgrade.edds'
+GUI       (E): ImageWidget::LoadImageFile can't load 'WeaponsUpgrade.edds'
+GUI       (E): ImageWidget::LoadImageFile can't load 'weaponsupgrade.edds'
+RENDER    (W): MatMulti: material dz/structures/residential/stores/data/news_standnews_stand_details_co.paa forces alpha test, disabling, multi material has not to have alpha tested textures
+RENDER    (W): MatMulti: material dz/structures/residential/houseblocks/data/pub_int02_multidoplnky_interier_co.paa forces alpha test, disabling, multi material has not to have alpha tested textures
+SCRIPT    (W): @"WorkbenchV3/Scripts/5_Mission/mission/missionserver.c,3": FIX-ME: Overriding function 'InvokeOnConnect' but not marked as 'override'
+RESOURCES (E): ==== Resource leaks ====
+RESOURCES (E): Graphics/Textures/Water/envForest_stream_co.edds   1
+RESOURCES (E): Graphics/Textures/Water/caustic.edds   1
+RESOURCES (E): Graphics/Textures/Water/dayzwater1_no.edds   1
+RESOURCES (E): Graphics/Textures/Water/sand_no.edds   1
+RESOURCES (E): Graphics/Textures/Water/foam_ca.edds   1
+RESOURCES (E): system/system.edds   1

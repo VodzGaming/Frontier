@@ -1,0 +1,16 @@
+MetaFileClass {
+ Name "{384B1E3D190AC7D7}WorkbenchV3/UI/Icons/Ammo.png"
+ Author "desktop-al24u1t"
+ ChangeDate -327027835
+ Configurations {
+  PNGResourceClass PC {
+   SourceFile "Ammo.png"
+  }
+  PNGResourceClass XBOX_ONE : PC {
+  }
+  PNGResourceClass PS4 : PC {
+  }
+  PNGResourceClass LINUX : PC {
+  }
+ }
+}

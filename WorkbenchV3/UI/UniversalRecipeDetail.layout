@@ -1,0 +1,129 @@
+PanelWidgetClass RecipeDetailPanel {
+ position 0 0
+ size 1 1
+ style blank
+ {
+  PanelWidgetClass DetailContent {
+   position 0.02 0.02
+   size 0.96 0.96
+   style blank
+   {
+    TextWidgetClass DetailRecipeName {
+     ignorepointer 1
+     position 0.04792 0.00003
+     size 0.94 0.07856
+     text "Select a recipe"
+     font "WorkbenchV3/UI/font/Orbitron34"
+     "text color" 0.93 0.89 0.83 1
+     "text halign" left
+     "text valign" center
+    }
+    TextWidgetClass DetailCraftInfo {
+     ignorepointer 1
+     color 0.8 0.8 0.8 1
+     position 0.04805 0.07878
+     size 0.85488 0.04087
+     text "Craft time: --"
+     font "WorkbenchV3/UI/font/Orbitron24"
+     "exact text" 1
+     "text halign" left
+     "text valign" center
+    }
+    PanelWidgetClass DetailPreviewRow {
+     position 0.04811 0.1197
+     size 0.9 0.36
+     style blank
+     {
+      ItemPreviewWidgetClass DetailPreviewWidget {
+       position 0 0
+       size 1 0.82
+       halign center_ref
+       valign center_ref
+      }
+      MultilineTextWidgetClass DetailAttachmentInfo {
+       position 0.00009 0.75523
+       size 1 0.18
+       text "Tools (bench storage): None"
+       font "WorkbenchV3/UI/font/Orbitron22"
+       "text color" 0.82 0.78 0.72 1
+       "text halign" left
+       "text valign" center
+       wrap 1
+      }
+     }
+    }
+    PanelWidgetClass DetailResultPanel {
+     position 0.0479 0.47922
+     size 0.9 0.2
+     style blank
+     {
+      TextWidgetClass DetailResultHeader {
+       ignorepointer 1
+       position 0.00011 0.00295
+       size 0.9 0.18
+       text "Craft results"
+       font "WorkbenchV3/UI/font/Orbitron26"
+       "text color" 0.93 0.89 0.83 1
+       "text halign" left
+       "text valign" center
+      }
+      WrapSpacerWidgetClass DetailResultWrap {
+       visible 1
+       position 0 0.28
+       size 1 0
+       Padding 0
+       Margin 0
+       "Size To Content V" 1
+       content_halign left
+      }
+     }
+    }
+    PanelWidgetClass DetailIngredientPanel {
+     position 0.04797 0.67472
+     size 0.9 0.2706
+     style blank
+     {
+      TextWidgetClass DetailIngredientHeader {
+       ignorepointer 1
+       position -0.00018 -0.06378
+       size 0.8 0.2
+       text "Necessary materials (have / need)"
+       font "WorkbenchV3/UI/font/Orbitron26"
+       "text color" 0.93 0.89 0.83 1
+       "text halign" left
+       "text valign" center
+      }
+      ScrollWidgetClass DetailIngredientScroll {
+       position 0.00515 0.22614
+       size 0.94 0.75374
+       "Scrollbar V" 0
+       {
+        WrapSpacerWidgetClass DetailIngredientWrap {
+         size 1 1
+         Padding 0
+         Margin 0
+         "Size To Content V" 1
+         content_halign left
+        }
+       }
+      }
+     }
+    }
+    ProgressBarWidgetClass DetailProgress {
+     visible 0
+     position 0 0.86
+     size 0.9 0.03
+     style Stamina
+     current 0
+    }
+    ButtonWidgetClass DetailBtnCraft {
+     position 0.04731 0.93422
+     size 0.91962 0.08
+     style Default
+     text "Add to queue"
+     font "WorkbenchV3/UI/font/Orbitron18"
+    }
+   }
+  }
+ }
+}

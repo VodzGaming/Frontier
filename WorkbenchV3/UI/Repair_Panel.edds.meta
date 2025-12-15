@@ -1,0 +1,16 @@
+MetaFileClass {
+ Name "{9D56F5FA6F05798A}Frontier/Workbench/UI/Repair_Panel.edds"
+ Author "desktop-al24u1t"
+ ChangeDate 14906222
+ Configurations {
+  PNGResourceClass PC {
+   SourceFile "Repair_Panel.png"
+  }
+  PNGResourceClass XBOX_ONE : PC {
+  }
+  PNGResourceClass PS4 : PC {
+  }
+  PNGResourceClass LINUX : PC {
+  }
+ }
+}

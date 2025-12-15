@@ -1,0 +1,70 @@
+PanelWidgetClass RecipeCardRoot {
+ size 0.95 0.18
+ "stretch mode" none
+ {
+ ButtonWidgetClass CardButton {
+  position 0 0
+  size 1 1
+   style Blueprint_Card
+   {
+    ItemPreviewWidgetClass CardPreview {
+     halign left_ref
+     valign center_ref
+     position 12 0
+     size 70 70
+     hexactpos 1
+     vexactpos 0
+     hexactsize 1
+     vexactsize 1
+    }
+    PanelWidgetClass CardTextColumn {
+     ignorepointer 1
+     position 96 0
+     size 0.8 1
+     halign left_ref
+     hexactpos 1
+     vexactpos 0
+     style blank
+     {
+      TextWidgetClass CardName {
+       ignorepointer 1
+       position 0 0.08
+       size 0.95 0.28
+       text "Item Name"
+        font "WorkbenchV3/UI/font/Orbitron24"
+       "text halign" left
+       "text valign" center
+      }
+      TextWidgetClass CardDesc {
+       ignorepointer 1
+       position 0 0.42
+       size 0.95 0.24
+       text "Category"
+        font "WorkbenchV3/UI/font/Orbitron20"
+       "text halign" left
+       "text valign" top
+      }
+      TextWidgetClass CardTime {
+       ignorepointer 1
+       position 0 0.74
+       size 0.5 0.2
+       text "Craft: 00s"
+        font "WorkbenchV3/UI/font/Orbitron18"
+       "text halign" left
+       "text valign" center
+      }
+      TextWidgetClass CardHaveNeed {
+       ignorepointer 1
+       position 0.52 0.74
+       size 0.43 0.2
+       text "0/0"
+        font "WorkbenchV3/UI/font/Orbitron18"
+       "text halign" right
+       "text valign" center
+      }
+     }
+    }
+   }
+  }
+ }
+}

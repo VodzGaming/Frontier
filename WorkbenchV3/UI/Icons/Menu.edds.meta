@@ -1,0 +1,16 @@
+MetaFileClass {
+ Name "{67AF68B4141FDFE8}WorkbenchV3/UI/Icons/Menu.png"
+ Author "desktop-al24u1t"
+ ChangeDate -1936591995
+ Configurations {
+  PNGResourceClass PC {
+   SourceFile "Menu.png"
+  }
+  PNGResourceClass XBOX_ONE : PC {
+  }
+  PNGResourceClass PS4 : PC {
+  }
+  PNGResourceClass LINUX : PC {
+  }
+ }
+}

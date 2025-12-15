@@ -1,0 +1,27 @@
+FRONTIER WORKBENCH — ADMIN BYPASS CONFIG
+---------------------------------------
+
+1. Runtime file location
+   - Created automatically at first server start: `$profile:/Frontier/WorkbenchAdminBypass.json`
+   - Same directory as `WorkbenchPower.json`. Deleting the file regenerates it with a sample entry.
+
+2. JSON structure
+```
+{
+    "adminSteamIds": [
+        "76561198000000000"
+    ]
+}
+```
+   - Keep the values wrapped in quotes.
+   - Use raw Steam64 IDs only (no names, commas between entries).
+   - You can put as many entries as you want; order does not matter.
+
+3. Finding a Steam64 ID
+   - Ask the player to run `status` in-game and copy the long numeric ID.
+   - Or paste their profile link at https://steamid.io and use the “steamID64” value.
+
+4. Effect in game
+   - Anyone listed can open/craft/refresh every Frontier Workbench regardless of its per-bench authorization list.
+   - Bench owners still have full control even if not listed.
+   - Changes take effect on the next config reload (restart the server or delete `WorkbenchAdminBypass.json` to regenerate).

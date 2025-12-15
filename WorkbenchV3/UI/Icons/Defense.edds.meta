@@ -1,0 +1,16 @@
+MetaFileClass {
+ Name "{343839E188A8F29D}WorkbenchV3/UI/Icons/dayz_icon_defense_smooth.edds"
+ Author "desktop-al24u1t"
+ ChangeDate -482512012
+ Configurations {
+  PNGResourceClass PC {
+   SourceFile "dayz_icon_defense_smooth.png"
+  }
+  PNGResourceClass XBOX_ONE : PC {
+  }
+  PNGResourceClass PS4 : PC {
+  }
+  PNGResourceClass LINUX : PC {
+  }
+ }
+}

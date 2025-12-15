@@ -1,0 +1,38 @@
+FrameWidgetClass QueueItemRoot {
+ ignorepointer 1
+ size 0.94 0.065
+ halign center_ref
+ valign center_ref
+ {
+  PanelWidgetClass QueuePanel {
+   ignorepointer 1
+   color 0 0 0 0.5
+   size 1 1
+   style blank
+   {
+    TextWidgetClass QueueRecipeName {
+     ignorepointer 1
+     position 0.01 0.05
+     size 0.5 0.4
+     "text halign" left
+     "text valign" center
+     wrap 0
+    }
+    TextWidgetClass QueueTimer {
+     ignorepointer 1
+     position 0.52 0.05
+     size 0.2 0.4
+     "text halign" center
+     "text valign" center
+    }
+    TextWidgetClass QueueRequestedBy {
+     ignorepointer 1
+     position 0.75 0.05
+     size 0.23 0.4
+     "text halign" right
+     "text valign" center
+    }
+   }
+  }
+ }
+}

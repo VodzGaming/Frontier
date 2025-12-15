@@ -1,0 +1,67 @@
+PanelWidgetClass CategoryOptionRoot {
+ size 1 0.08
+ halign left_ref
+ valign top_ref
+ {
+  ButtonWidgetClass BtnCategoryOption {
+   position 0 0
+   size 1 1
+   style Craft_Btn
+   color 0 0 0 0
+   {
+    PanelWidgetClass CategoryBase {
+     ignorepointer 1
+     position 0 0
+     size 1 1
+     color 0.07 0.09 0.14 0.95
+     style blank
+    }
+    PanelWidgetClass CategoryHighlight {
+     ignorepointer 1
+     visible 0
+     position 0 0
+     size 1 1
+     color 0.09 0.44 0.18 0.85
+     style blank
+    }
+    FrameWidgetClass CategoryHighlightOutline {
+     ignorepointer 1
+     visible 0
+     position 0 0
+     size 1 1
+     color 0.4 0.95 0.55 1
+    }
+    PanelWidgetClass CategoryContent {
+     ignorepointer 1
+     position 0 0
+     size 1 1
+     halign center_ref
+     valign center_ref
+     style blank
+     {
+      PanelWidgetClass CategoryIconArea {
+       ignorepointer 1
+       position 0 0
+       size 1 1
+       halign center_ref
+       valign center_ref
+       style blank
+      {
+       ImageWidgetClass CategoryIcon {
+         ignorepointer 1
+         position 0 0
+         size 0.80 1
+         halign center_ref
+         valign center_ref
+         mode blend
+         stretch 1
+         "stretch mode" keep_aspect
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+}

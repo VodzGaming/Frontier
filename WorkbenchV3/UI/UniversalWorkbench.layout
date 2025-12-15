@@ -1,0 +1,273 @@
+FrameWidgetClass UniversalWorkbenchRoot {
+ size 0.8 0.8
+ halign center_ref
+ valign center_ref
+ hexactpos 0
+ vexactpos 0
+ hexactsize 0
+ vexactsize 0
+ {
+  PanelWidgetClass WorkbenchCanvas {
+   size 1 1
+   halign center_ref
+   valign center_ref
+   hexactpos 0
+   vexactpos 0
+   hexactsize 0
+   vexactsize 0
+   {
+    ImageWidgetClass BackgroundImage {
+     ignorepointer 1
+     color 1 1 1 1
+     position 0 0
+     size 1 1
+     halign center_ref
+     valign center_ref
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 0
+     image0 "WorkbenchV3/UI/Background.edds"
+     mode blend
+     "stretch mode" stretch_w_h
+    }
+    PanelWidgetClass ScreenBackdrop {
+     ignorepointer 1
+     color 0 0 0 0
+     position 0 0
+     size 1 1
+     halign center_ref
+     valign center_ref
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 0
+    }
+    PanelWidgetClass WorkbenchBody {
+     color 0.08 0.08 0.08 0.95
+     position -0.00159 0.00533
+     size 0.98052 0.96635
+     halign center_ref
+     valign center_ref
+     style blank
+     {
+      PanelWidgetClass PanelWrapperAllRecipes {
+       position 0.01196 0.02069
+       size 0.31434 0.94931
+       style blank
+       {
+        PanelWidgetClass CategoriesColumn {
+         position -0.00129 0.0048
+         size 0.18 0.98202
+         style blank
+         {
+          ScrollWidgetClass CategoryScroll {
+           position 0 0
+           size 0.99308 0.99758
+           "Scrollbar V" 1
+           {
+           WrapSpacerWidgetClass CategoryIconWrap {
+             size 1 1
+             Padding 0
+             Margin 0
+             "Size To Content V" 1
+             content_halign center
+           }
+           }
+          }
+         }
+        }
+        PanelWidgetClass RecipesColumn {
+         position 0.185 0.02482
+         size 0.82 0.95
+         style blank
+         {
+          PanelWidgetClass SelectedPreviewPanel {
+           visible 0
+           position -0.00477 0.00169
+           size 1 0.18
+           style blank
+           {
+            ItemPreviewWidgetClass SelectedRecipePreview {
+             visible 0
+             position 0.00159 -0.02809
+             size 1 1
+             halign center_ref
+             valign center_ref
+            }
+           }
+          }
+          PanelWidgetClass RecipeListPanel {
+           position 0 0.03084
+           size 0.99505 0.72916
+           priority 0
+           style blank
+           {
+            ScrollWidgetClass ScrollWidgetRecipes {
+             position 0.00475 0.00518
+             size 0.99037 1.00235
+             "Scrollbar V" 1
+             {
+              WrapSpacerWidgetClass WrapSpacerWidgetRecipes {
+               size 1 1
+               Padding 0
+               Margin 0
+               "Size To Content V" 1
+               content_halign left
+              }
+             }
+            }
+           }
+          }
+          PanelWidgetClass SearchPanel {
+           position 0 0.78
+           size 0.99609 0.08
+           style blank
+           {
+            EditBoxWidgetClass RecipeSearchInput {
+             position 0 0.2
+             size 1.00061 0.6
+             font "WorkbenchV3/UI/font/Orbitron16"
+            }
+            ButtonWidgetClass SearchSubmitButton {
+             position 0.00333 0.18947
+             size 0.24 0.6
+             halign right_ref
+             style Default
+             text "Search"
+             font "WorkbenchV3/UI/font/Orbitron16"
+            }
+           }
+          }
+          PanelWidgetClass QueueBanner {
+           position 0 0.86
+           size 1 0.07
+           style blank
+           {
+            TextWidgetClass QueueHeader {
+             size 0.6 1
+             text "Queue (empty)"
+             font "WorkbenchV3/UI/font/Orbitron20"
+             "text color" 0.93 0.89 0.83 1
+             "text valign" center
+            }
+            TextWidgetClass QueueStatusLabel {
+             size 0.35 1
+             halign right_ref
+             text ""
+             font "WorkbenchV3/UI/font/Orbitron18"
+             "text color" 0.82 0.68 0.52 1
+             "text halign" right
+             "text valign" center
+            }
+           }
+          }
+          ScrollWidgetClass ScrollQueue {
+           position 0 0.93
+           size 1 0.07
+           "Scrollbar V" 1
+           {
+            WrapSpacerWidgetClass WrapSpacerQueue {
+             size 1 0.01
+             Padding 0
+             Margin 0
+             "Size To Content V" 1
+            }
+           }
+          }
+         }
+        }
+       }
+      }
+      PanelWidgetClass RightColumn {
+       position 0.34425 0.02055
+       size 0.64706 0.94945
+       style blank
+       {
+        PanelWidgetClass RecipeDetailHost {
+         position 0.01559 0.01673
+         size 0.94789 0.94847
+         style blank
+        }
+        PanelWidgetClass ProgressPanel {
+         visible 0
+         position 0.05 0.82
+         size 0.9 0.12
+         style blank
+         {
+          TextWidgetClass ProgressPanelLabel {
+           visible 0
+           position 0.03 0
+           size 0.9 0.25
+           text ""
+           font "WorkbenchV3/UI/font/Orbitron24"
+           "text color" 0.93 0.89 0.83 1
+           "text halign" left
+           "text valign" top
+          }
+          ProgressBarWidgetClass ProgressPanelBar {
+           position 0.03 0.35
+           size 0.94 0.4
+           style Stamina
+           current 0
+          }
+         }
+        }
+        PanelWidgetClass CraftActionPanel {
+         visible 0
+         position 0.02 0.9
+         size 0.96 0.08
+         style blank
+         {
+          ButtonWidgetClass PrimaryCraftButton {
+           visible 0
+           position 0 0
+           size 1 1
+           style Default
+           font "WorkbenchV3/UI/font/Orbitron20"
+          }
+         }
+        }
+       }
+      }
+      ButtonWidgetClass BtnClose {
+       position 0.97651 -0.00735
+       size 0.03 0.05
+       halign right_ref
+       style Default
+       text "X"
+       font "WorkbenchV3/UI/font/Orbitron18"
+      }
+      PanelWidgetClass WorkbenchLockedPanel {
+       visible 0
+       position 0 0
+       size 1 1
+       style blank
+       {
+        TextWidgetClass LockedTitle {
+         position 0 0.05
+         size 1 0.25
+         text "Assembly Upgrade Required"
+         font "WorkbenchV3/UI/font/Orbitron32"
+         "text color" 0.93 0.89 0.83 1
+         "text halign" center
+         "text valign" center
+        }
+        MultilineTextWidgetClass LockedHint {
+         position 0.1 0.34
+         size 0.8 0.5
+         text "Install a Tier 1 module to enable crafting.\nCurrent tier: 0"
+         font "WorkbenchV3/UI/font/Orbitron18"
+         "text color" 0.85 0.78 0.7 1
+         "text halign" center
+         "text valign" center
+         wrap 1
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+}

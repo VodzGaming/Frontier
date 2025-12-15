@@ -1,0 +1,50 @@
+SmartPanelWidgetClass RecipeItem {
+ size 0.32 0.16
+ {
+  ImageWidgetClass RecipeCardBackground {
+   ignorepointer 1
+   size 1 1
+   imageTexture "{6C1AA5DDD120493A}WorkbenchV3/UI/mockups/Recipe_Card.edds"
+   mode blend
+   "src alpha" 1
+   "stretch mode" stretch_w_h
+  }
+  ButtonWidgetClass OneItemButtonWidget {
+   color 0 0 0 0
+   size 1 1
+  }
+  ImageWidgetClass OneItemImage {
+   ignorepointer 1
+   position 0.02 0.19
+   size 0.1 0.62
+   mode blend
+   "src alpha" 1
+   "stretch mode" keep_aspect
+  }
+    TextWidgetClass OneItem {
+   ignorepointer 1
+   position 0.18 0.18
+   size 0.76 0.44
+   text "Recipe name"
+     font "WorkbenchV3/UI/font/Orbitron22"
+   wrap 1
+   "text halign" left
+   "text valign" top
+  }
+  TextWidgetClass OneItemSub {
+   ignorepointer 1
+   color 0.8 0.8 0.8 1
+   position 0.18 0.66
+   size 0.76 0.24
+   text "Category | 10s"
+     font "WorkbenchV3/UI/font/Orbitron16"
+   "text halign" left
+   "text valign" top
+  }
+  EditBoxWidgetClass OneItemStorage {
+   visible 0
+   position 0.8 0.05
+   size 0.18 0.15
+  }
+ }
+}

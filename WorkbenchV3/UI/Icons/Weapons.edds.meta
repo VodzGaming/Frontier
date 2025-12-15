@@ -1,0 +1,16 @@
+MetaFileClass {
+ Name "{6BBD3306FC8080F8}WorkbenchV3/UI/Icons/Weapons.png"
+ Author "desktop-al24u1t"
+ ChangeDate -2138442875
+ Configurations {
+  PNGResourceClass PC {
+   SourceFile "Weapons.png"
+  }
+  PNGResourceClass XBOX_ONE : PC {
+  }
+  PNGResourceClass PS4 : PC {
+  }
+  PNGResourceClass LINUX : PC {
+  }
+ }
+}
