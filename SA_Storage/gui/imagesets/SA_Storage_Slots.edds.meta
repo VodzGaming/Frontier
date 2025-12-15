@@ -1,0 +1,16 @@
+MetaFileClass {
+ Name "{BE71389106CB3337}Spud_Stuff/SA_Storage/gui/imagesets/SA_Storage_Slots.edds"
+ Author "desktop-al24u1t"
+ ChangeDate -1743392030
+ Configurations {
+  PAAResourceClass PC {
+   SourceFile "SA_Storage_Slots.paa"
+  }
+  PAAResourceClass XBOX_ONE : PC {
+  }
+  PAAResourceClass PS4 : PC {
+  }
+  PAAResourceClass LINUX : PC {
+  }
+ }
+}

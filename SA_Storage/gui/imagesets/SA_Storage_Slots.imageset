@@ -1,0 +1,62 @@
+ImageSetClass {
+ Name "SA_Storage_Slots"
+ RefSize 2048 2048
+ Textures {
+  ImageSetTextureClass {
+   mpix 1
+   path "{BE71389106CB3337}Spud_Stuff/SA_Storage/gui/imagesets/SA_Storage_Slots.edds"
+  }
+ }
+ Images {
+  ImageSetDefClass SA_Storage_HackSaw {
+   Name "SA_Storage_HackSaw"
+   Pos 874 132
+   Size 375 375
+   Flags 0
+  }
+  ImageSetDefClass SA_Storage_Hatchet {
+   Name "SA_Storage_Hatchet"
+   Pos 1565 222
+   Size 300 300
+   Flags 0
+  }
+  ImageSetDefClass SA_Storage_HandSaw {
+   Name "SA_Storage_HandSaw"
+   Pos 184 81
+   Size 435 435
+   Flags 0
+  }
+  ImageSetDefClass SA_Storage_ScrewDriver {
+   Name "SA_Storage_ScrewDriver"
+   Pos 359 658
+   Size 263 263
+   Flags 0
+  }
+  ImageSetDefClass SA_Storage_Pliers {
+   Name "SA_Storage_Pliers"
+   Pos 1376 688
+   Size 258 258
+   Flags 0
+  }
+  ImageSetDefClass SA_Storage_Axe {
+   Name "SA_Storage_Axe"
+   Pos 794 1208
+   Size 465 465
+   Flags 0
+  }
+  ImageSetDefClass SA_Storage_PickAxe {
+   Name "SA_Storage_PickAxe"
+   Pos 1393 1229
+   Size 460 460
+   Flags 0
+  }
+  ImageSetDefClass SA_Storage_Shovel {
+   Name "SA_Storage_Shovel"
+   Pos 154 1232
+   Size 500 500
+   Flags 0
+  }
+ }
+ Groups {
+ }
+}
