@@ -1,0 +1,140 @@
+ambient[]       = {1, 1, 1, 1};
+diffuse[]       = {1, 1, 1, 1};
+forcedDiffuse[] = {0, 0, 0, 0};
+emmisive[]      = {0, 0, 0, 1};
+
+// Plastic jacket with a slightly shiny metal hub:
+// Overall spec here, detailed control in SMDI.
+specular[]      = {0.22, 0.22, 0.22, 1};
+specularPower   = 60;
+
+PixelShaderID   = "Super";
+VertexShaderID  = "Super";
+
+//-----------------------------------------------------------
+// Stage 0: Base Colour (CO)
+//-----------------------------------------------------------
+class Stage0
+{
+    texture  = "WorkbenchV3\models\floppy_disk\data\tier_1\T1_Floppy_Disk_co.paa";
+    uvSource = "tex";
+    class uvTransform
+    {
+        aside[] = {1, 0, 0};
+        up[]    = {0, 1, 0};
+        dir[]   = {0, 0, 0};
+        pos[]   = {0, 0, 0};
+    };
+};
+
+//-----------------------------------------------------------
+// Stage 1: Normal map (NOHQ)
+//-----------------------------------------------------------
+class Stage1
+{
+    texture  = "WorkbenchV3\models\floppy_disk\data\tier_1\T1_Floppy_Disk_nohq.paa";
+    uvSource = "tex";
+    class uvTransform
+    {
+        aside[] = {1, 0, 0};
+        up[]    = {0, 1, 0};
+        dir[]   = {0, 0, 0};
+        pos[]   = {0, 0, 0};
+    };
+};
+
+//-----------------------------------------------------------
+// Stage 2: Detail (DT) - default procedural
+//-----------------------------------------------------------
+class Stage2
+{
+    texture  = "#(argb,8,8,3)color(1,1,1,1,DT)";
+    uvSource = "tex";
+    class uvTransform
+    {
+        aside[] = {1, 0, 0};
+        up[]    = {0, 1, 0};
+        dir[]   = {0, 0, 0};
+        pos[]   = {0, 0, 0};
+    };
+};
+
+//-----------------------------------------------------------
+// Stage 3: Macro / Mask (MC) - usually left like this
+//-----------------------------------------------------------
+class Stage3
+{
+    texture  = "#(argb,8,8,3)color(0,0,0,0,MC)";
+    uvSource = "tex";
+    class uvTransform
+    {
+        aside[] = {1, 0, 0};
+        up[]    = {0, 1, 0};
+        dir[]   = {0, 0, 0};
+        pos[]   = {0, 0, 0};
+    };
+};
+
+//-----------------------------------------------------------
+// Stage 4: AS (Ambient Shadow / AO)
+//-----------------------------------------------------------
+class Stage4
+{
+    texture  = "WorkbenchV3\models\floppy_disk\data\tier_1\T1_Floppy_Disk_as.paa";
+    uvSource = "tex";
+    class uvTransform
+    {
+        aside[] = {1, 0, 0};
+        up[]    = {0, 1, 0};
+        dir[]   = {0, 0, 0};
+        pos[]   = {0, 0, 0};
+    };
+};
+
+//-----------------------------------------------------------
+// Stage 5: SMDI (Specular / Metal / Gloss)
+//-----------------------------------------------------------
+class Stage5
+{
+    texture  = "WorkbenchV3\models\floppy_disk\data\tier_1\T1_Floppy_Disk_smdi.paa";
+    uvSource = "tex";
+    class uvTransform
+    {
+        aside[] = {1, 0, 0};
+        up[]    = {0, 1, 0};
+        dir[]   = {0, 0, 0};
+        pos[]   = {0, 0, 0};
+    };
+};
+
+//-----------------------------------------------------------
+// Stage 6: Fresnel (edge reflections)
+//-----------------------------------------------------------
+class Stage6
+{
+    texture  = "#(ai,64,64,1)fresnel(1.3,0.23)";
+    uvSource = "tex";
+    class uvTransform
+    {
+        aside[] = {1, 0, 0};
+        up[]    = {0, 1, 0};
+        dir[]   = {0, 0, 0};
+        pos[]   = {0, 0, 0};
+    };
+};
+
+//-----------------------------------------------------------
+// Stage 7: Environment map (DayZ env cube)
+//-----------------------------------------------------------
+class Stage7
+{
+    texture  = "dz\data\data\env_land_co.paa";
+    uvSource = "tex";
+    class uvTransform
+    {
+        aside[] = {1, 0, 0};
+        up[]    = {0, 1, 0};
+        dir[]   = {0, 0, 0};
+        pos[]   = {0, 0, 0};
+    };
+};

@@ -57,6 +57,8 @@ class FB_Workbench_Kit: TerritoryFlagKit
     override string GetLoopDeploySoundset() return "Shelter_Site_Build_Loop_SoundSet";
     override string GetDeployFinishSoundset() return "";
     override void RefreshPhysics() {};
+    // Workbench kit model does not use the vanilla proxy selections; skip to avoid null-pointer crashes on spawn.
+    override void UpdatePhysics() {};
 
     override bool PlacementCanBeRotated() return true;
     override bool DoPlacingHeightCheck() return false;

@@ -921,7 +921,9 @@ class FB_Workbench: TerritoryFlag
         ctx.Write(job.TimeRemaining);
         ctx.Write(job.Active);
 
-        int resCount = job.Results ? job.Results.Count() : 0;
+        int resCount = 0;
+        if (job.Results)
+            resCount = job.Results.Count();
         ctx.Write(resCount);
         if (job.Results && resCount > 0)
         {
@@ -1355,9 +1357,18 @@ class FB_Workbench: TerritoryFlag
         }
 
         if (objfound)
+        {
             m_EnergyDrainPerSecond = (timeElapsed * GetPowerDrainMultiplier()) / 3600;
+        }
         else
-            m_EnergyDrainPerSecond = -1;
+        {
+            // Fallback: if we have power but no tracked consumers, treat the bench as having a tiny idle drain
+            // so we still surface a time estimate instead of showing [POWERED] indefinitely.
+            if (m_HasEnergyLeft)
+                m_EnergyDrainPerSecond = (1 * GetPowerDrainMultiplier()) / 3600; // 1 unit/hour idle drain
+            else
+                m_EnergyDrainPerSecond = -1;
+        }
 
 #ifdef SERVER
         UpdateLifetimeCache();
@@ -1433,6 +1444,8 @@ class FB_Workbench: TerritoryFlag
             UpdateRefresherTimeRemaining();
             SetRefresherActiveCustom(m_HasEnergyLeft);
         }
+        // Track newly attached items so their power consumption contributes to the timer even if they never enter the trigger volume.
+        RegisterTrackedEntity(ItemBase.Cast(item));
         UpdateUpgradeEffects();
 	}
 
@@ -1445,6 +1458,8 @@ class FB_Workbench: TerritoryFlag
             UpdateRefresherTimeRemaining();
             SetRefresherActiveCustom(m_HasEnergyLeft);
         }
+        // Stop tracking detached items; they no longer draw power from this bench.
+        UnregisterTrackedEntity(ItemBase.Cast(item));
         UpdateUpgradeEffects();
     }
 #endif
@@ -1519,7 +1534,9 @@ class FB_Workbench: TerritoryFlag
         int queueVersion = CRAFT_STORE_VERSION;
         ctx.Write(queueVersion);
 
-        int queueCount = (m_CraftQueue) ? m_CraftQueue.Count() : 0;
+        int queueCount = 0;
+        if (m_CraftQueue)
+            queueCount = m_CraftQueue.Count();
         ctx.Write(queueCount);
 
         if (queueCount > 0)
@@ -1546,7 +1563,8 @@ class FB_Workbench: TerritoryFlag
 
         if (!ctx.Read(m_WorkbenchOwnerId))
             m_WorkbenchOwnerId = "";
-        m_HasOwnerFlag = (m_WorkbenchOwnerId && m_WorkbenchOwnerId != "");
+        // Flag ownership if an ID was stored; strings do not coerce to bool so compare explicitly.
+        m_HasOwnerFlag = (m_WorkbenchOwnerId != "");
 
         int queueVersion;
         if (!ctx.Read(queueVersion))
